@@ -4,8 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.androind.myaudio.activity.PlayerActivity">
-    
 
-    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Singer image -->
+        <ImageView
+            android:id="@+id/singer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/ed_sheeran" />
+
+        <!-- Song name -->
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/singer_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/player_song_name_text"
+            android:textStyle="bold"
+            tools:text="Shape of you" />
+
+        <!-- Singer name -->
+        <TextView
+            android:id="@+id/singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/player_singer_name_text"
+            tools:text="Ed sheeran" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Progress views -->
+
+        <RelativeLayout
+            android:id="@+id/progress_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Elapsed time -->
+            <TextView
+                android:id="@+id/elapsed_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/elapsed_time_sample" />
+
+            <!-- Total time -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/total_time_sample" />
+
+            <!-- Progress bar -->
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/elapsed_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/player_progressbar" />
+
+        </RelativeLayout>
+
+        <!-- Repeat, favourite, shuffle buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                style="@style/PlayerOptionButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_repeat_black_24dp" />
+
+            <ImageButton
+                style="@style/PlayerOptionButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favorite_border_black_24dp" />
+
+            <ImageButton
+                style="@style/PlayerOptionButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shuffle_black_24dp" />
+        </LinearLayout>
+
+        <!-- Previous, play, next buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                style="@style/PlayerMediaButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageButton
+                style="@style/PlayerMediaButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageButton
+                style="@style/PlayerMediaButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_skip_next_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

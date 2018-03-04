@@ -16,9 +16,9 @@
     <ImageButton
         android:id="@+id/songs_button"
         style="@style/LibraryButton"
-        android:layout_toLeftOf="@id/anchor_view"
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/library_button_center_margin"
+        android:layout_toLeftOf="@id/anchor_view"
         android:contentDescription="@string/ic_media"
         android:src="@drawable/ic_songs" />
 
@@ -26,9 +26,9 @@
     <ImageButton
         android:id="@+id/singers_button"
         style="@style/LibraryButton"
-        android:layout_toRightOf="@id/anchor_view"
         android:layout_centerVertical="true"
         android:layout_marginLeft="@dimen/library_button_center_margin"
+        android:layout_toRightOf="@id/anchor_view"
         android:contentDescription="@string/ic_singers"
         android:src="@drawable/ic_singers" />
 

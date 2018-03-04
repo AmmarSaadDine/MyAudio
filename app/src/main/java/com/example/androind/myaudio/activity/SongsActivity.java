@@ -9,8 +9,6 @@ import android.widget.ListView;
 
 import com.example.androind.myaudio.R;
 import com.example.androind.myaudio.adaptors.SongAdaptor;
-import com.example.androind.myaudio.entity.DataMock;
-import com.example.androind.myaudio.entity.Singer;
 import com.example.androind.myaudio.entity.Song;
 
 import java.util.ArrayList;
@@ -27,7 +25,7 @@ public class SongsActivity extends AppCompatActivity {
 
         // get the songs data form the intent
         Bundle bundle = getIntent().getExtras();
-        if (!bundle.isEmpty()) {
+        if (bundle != null && !bundle.isEmpty()) {
             if (bundle.containsKey("songs")) {
                 songs = bundle.getParcelableArrayList("songs");
             }

@@ -6,4 +6,7 @@
 
     <!-- Library -->
     <color name="library_button_background">#7E57C2</color>
+    <!-- Player -->
+    <color name="player_media_button_background">#7E57C2</color>
+    <color name="player_option_button_background">#D1C4E9</color>
 </resources>

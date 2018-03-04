@@ -1,7 +1,6 @@
 package com.example.androind.myaudio.activity;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,6 @@ import com.example.androind.myaudio.R;
 import com.example.androind.myaudio.adaptors.SingerAdaptor;
 import com.example.androind.myaudio.entity.DataMock;
 import com.example.androind.myaudio.entity.Singer;
-import com.example.androind.myaudio.entity.Song;
 
 import java.util.ArrayList;
 
@@ -28,7 +26,7 @@ public class SingersActivity extends AppCompatActivity {
 
         // get the singers data form the intent
         Bundle bundle = getIntent().getExtras();
-        if (!bundle.isEmpty()) {
+        if (bundle != null && !bundle.isEmpty()) {
             if (bundle.containsKey("singers")) {
                 singers = bundle.getParcelableArrayList("singers");
             }

@@ -1,8 +1,12 @@
 <resources>
+
     <string name="app_name">MyAudio</string>
     <string name="library">Audio Library</string>
     <string name="songs">Songs</string>
     <string name="singers">Singers</string>
+    <string name="now_playing">Now playing</string>
+    <string name="elapsed_time_sample">01:30</string>
+    <string name="total_time_sample">03:00</string>
 
     <!-- Content description -->
     <string name="ic_media">Media icon</string>
