@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androind.myaudio.activity.LibraryActivity">
+
+    <!-- Center Anchor View -->
+    <View
+        android:id="@+id/anchor_view"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <!-- First button group view -->
+    <RelativeLayout
+        android:id="@+id/songs_button"
+        android:layout_width="@dimen/library_button_dimen"
+        android:layout_height="@dimen/library_button_dimen"
+        android:layout_above="@id/anchor_view"
+        android:layout_marginBottom="@dimen/library_button_center_margin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/library_button_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Ripple effect view -->
+        <View style="@style/RippleBorderless" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_songs"
+            android:contentDescription="@string/ic_media"
+            android:tint="@android:color/white"/>
+    </RelativeLayout>
+
+    <!-- Second button group view -->
+    <RelativeLayout
+        android:id="@+id/singers_button"
+        android:layout_width="@dimen/library_button_dimen"
+        android:layout_height="@dimen/library_button_dimen"
+        android:layout_below="@id/anchor_view"
+        android:layout_marginTop="@dimen/library_button_center_margin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/library_button_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Ripple effect view -->
+        <View style="@style/RippleBorderless" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_singers"
+            android:contentDescription="@string/ic_media"
+            android:tint="@android:color/white"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

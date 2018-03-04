@@ -1,4 +1,6 @@
-package com.example.androind.myaudio;
+package com.example.androind.myaudio.entity;
+
+import com.example.androind.myaudio.R;
 
 import java.util.ArrayList;
 
@@ -34,12 +36,25 @@ public class DataMock {
         return instance;
     }
 
+    // Returns all songs
     public ArrayList<Song> getSongs() {
         return songs;
     }
 
+    /// Returns all singers
     public ArrayList<Singer> getSingers() {
         return singers;
+    }
+
+    /// Returns the songs of a specific singer
+    public ArrayList<Song> getSongs(Singer singer) {
+        ArrayList<Song> filteredSongs = new ArrayList<>();
+        for (Song song: getSongs()) {
+            if (song.singer.equals(singer)) {
+                filteredSongs.add(song);
+            }
+        }
+        return filteredSongs;
     }
 
     // Private methods
@@ -50,33 +65,33 @@ public class DataMock {
         // Init singers
         singers = new ArrayList<>();
 
-        Singer drake = new Singer("Drake", null);
+        Singer drake = new Singer("Drake", R.drawable.drake);
         singers.add(drake);
-        Singer edSheeran = new Singer("Ed Sheeran", null);
+        Singer edSheeran = new Singer("Ed Sheeran", R.drawable.ed_sheeran);
         singers.add(edSheeran);
-        Singer camilaCabello = new Singer("Camila Cabello", null);
+        Singer camilaCabello = new Singer("Camila Cabello", R.drawable.camila_cabello);
         singers.add(camilaCabello);
-        Singer postMalone = new Singer("Post Malone", null);
+        Singer postMalone = new Singer("Post Malone", R.drawable.post_malone);
         singers.add(postMalone);
-        Singer migos = new Singer("Migos", null);
+        Singer migos = new Singer("Migos", R.drawable.migos);
         singers.add(migos);
-        Singer duaLipa = new Singer("Dua Lipa", null);
+        Singer duaLipa = new Singer("Dua Lipa", R.drawable.dua_lipa);
         singers.add(duaLipa);
-        Singer nf = new Singer("NF", null);
+        Singer nf = new Singer("NF", R.drawable.nf);
         singers.add(nf);
-        Singer imagineDragons = new Singer("Imagine Dragons", null);
+        Singer imagineDragons = new Singer("Imagine Dragons", R.drawable.imagine_dragons);
         singers.add(imagineDragons);
-        Singer halsey = new Singer("Halsey", null);
+        Singer halsey = new Singer("Halsey", R.drawable.halsey);
         singers.add(halsey);
-        Singer bazzi = new Singer("Bazzi", null);
+        Singer bazzi = new Singer("Bazzi", R.drawable.bazzi);
         singers.add(bazzi);
-        Singer charliePuth = new Singer("Charlie Puth", null);
+        Singer charliePuth = new Singer("Charlie Puth", R.drawable.charlie_puth);
         singers.add(charliePuth);
-        Singer justinTimberlake = new Singer("Justin Timberlake", null);
+        Singer justinTimberlake = new Singer("Justin Timberlake", R.drawable.justin_timberlake);
         singers.add(justinTimberlake);
-        Singer eminem = new Singer("Eminem", null);
+        Singer eminem = new Singer("Eminem", R.drawable.eminem);
         singers.add(eminem);
-        Singer kaneBrown = new Singer("Kane Brown", null);
+        Singer kaneBrown = new Singer("Kane Brown", R.drawable.kane_brown);
         singers.add(kaneBrown);
 
         // Init songs

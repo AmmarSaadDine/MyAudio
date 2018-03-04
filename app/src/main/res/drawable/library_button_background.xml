@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/library_button_background"/>
+    <corners
+        android:bottomRightRadius="@dimen/library_button_corner"
+        android:bottomLeftRadius="@dimen/library_button_corner"
+        android:topLeftRadius="@dimen/library_button_corner"
+        android:topRightRadius="@dimen/library_button_corner"/>
+</shape>
