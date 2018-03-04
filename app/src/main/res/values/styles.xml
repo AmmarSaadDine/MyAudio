@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LibraryButton">
+        <item name="android:layout_width">@dimen/library_button_dimen</item>
+        <item name="android:layout_height">@dimen/library_button_dimen</item>
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:background">@drawable/library_button_background</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
     <style name="RippleBorderless">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

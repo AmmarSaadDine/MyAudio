@@ -5,60 +5,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.androind.myaudio.activity.LibraryActivity">
 
-    <!-- Center Anchor View -->
+    <!-- Center anchor view to render the other vies relatively to it -->
     <View
         android:id="@+id/anchor_view"
         android:layout_width="1dp"
         android:layout_height="1dp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true" />
 
-    <!-- First button group view -->
-    <RelativeLayout
+    <!-- Songs button -->
+    <ImageButton
         android:id="@+id/songs_button"
-        android:layout_width="@dimen/library_button_dimen"
-        android:layout_height="@dimen/library_button_dimen"
+        style="@style/LibraryButton"
         android:layout_above="@id/anchor_view"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/library_button_center_margin"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/library_button_background"
-        android:clickable="true"
-        android:focusable="true">
+        android:contentDescription="@string/ic_media"
+        android:src="@drawable/ic_songs" />
 
-        <!-- Ripple effect view -->
-        <View style="@style/RippleBorderless" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_songs"
-            android:contentDescription="@string/ic_media"
-            android:tint="@android:color/white"/>
-    </RelativeLayout>
-
-    <!-- Second button group view -->
-    <RelativeLayout
+    <!-- Singers button -->
+    <ImageButton
         android:id="@+id/singers_button"
-        android:layout_width="@dimen/library_button_dimen"
-        android:layout_height="@dimen/library_button_dimen"
+        style="@style/LibraryButton"
         android:layout_below="@id/anchor_view"
-        android:layout_marginTop="@dimen/library_button_center_margin"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/library_button_background"
-        android:clickable="true"
-        android:focusable="true">
-
-        <!-- Ripple effect view -->
-        <View style="@style/RippleBorderless" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_singers"
-            android:contentDescription="@string/ic_media"
-            android:tint="@android:color/white"/>
-    </RelativeLayout>
-
-
+        android:layout_marginTop="@dimen/library_button_center_margin"
+        android:contentDescription="@string/ic_singers"
+        android:src="@drawable/ic_singers" />
 </RelativeLayout>

@@ -1,9 +1,11 @@
 package com.example.androind.myaudio.activity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.example.androind.myaudio.R;
@@ -16,7 +18,7 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
-        RelativeLayout allSongsButton = findViewById(R.id.songs_button);
+        ImageButton allSongsButton = findViewById(R.id.songs_button);
         allSongsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +28,7 @@ public class LibraryActivity extends AppCompatActivity {
             }
         });
 
-        RelativeLayout singersButton = findViewById(R.id.singers_button);
+        ImageButton singersButton = findViewById(R.id.singers_button);
         singersButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
