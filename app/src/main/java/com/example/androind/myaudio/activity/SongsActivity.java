@@ -1,12 +1,16 @@
 package com.example.androind.myaudio.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.androind.myaudio.R;
 import com.example.androind.myaudio.adaptors.SongAdaptor;
 import com.example.androind.myaudio.entity.DataMock;
+import com.example.androind.myaudio.entity.Singer;
 import com.example.androind.myaudio.entity.Song;
 
 import java.util.ArrayList;
@@ -33,5 +37,22 @@ public class SongsActivity extends AppCompatActivity {
         SongAdaptor adapter = new SongAdaptor(this, songs);
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adapter);
+
+        // create on item click listener to open the songs activity
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position < songs.size()) {
+                    // get selected singer
+                    Song selectedSong = songs.get(position);
+
+                    // open songs activity for the selected singer
+                    Intent intent = new Intent(SongsActivity.this, PlayerActivity.class);
+                    intent.putExtra("selectedSong", selectedSong);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

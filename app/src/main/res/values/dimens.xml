@@ -17,6 +17,9 @@
     <dimen name="songs_list_item_height">88dp</dimen>
     <dimen name="songs_list_item_inner_padding">16dp</dimen>
 
+    <!-- Singer activity -->
+    <dimen name="singer_list_item_inner_padding">16dp</dimen>
+
     <!-- Font sizes -->
     <dimen name="library_button_text">20sp</dimen>
     <dimen name="song_item_name_text">20sp</dimen>

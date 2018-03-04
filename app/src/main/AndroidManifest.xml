@@ -20,10 +20,11 @@
         </activity>
         <activity
             android:name=".activity.SongsActivity"
-            android:label="@string/songs"/>
+            android:label="@string/songs" />
         <activity
             android:name=".activity.SingersActivity"
-            android:label="@string/singers"/>
+            android:label="@string/singers" />
+        <activity android:name=".activity.PlayerActivity"></activity>
     </application>
 
 </manifest>

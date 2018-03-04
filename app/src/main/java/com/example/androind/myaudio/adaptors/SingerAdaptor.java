@@ -29,7 +29,7 @@ public class SingerAdaptor extends ArrayAdapter<Singer> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.songs_list_item, parent, false);
+                    R.layout.singers_list_item, parent, false);
         }
 
         // Get the {@link Singer} object located at this position in the list

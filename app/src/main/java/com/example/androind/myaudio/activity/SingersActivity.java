@@ -39,6 +39,7 @@ public class SingersActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adaptor);
 
+        // create on item click listener to open the songs activity
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
