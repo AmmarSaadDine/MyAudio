@@ -14,28 +14,22 @@
         <item name="android:tint">@android:color/white</item>
         <item name="android:background">@drawable/library_button_background</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:elevation">@dimen/library_button_elevation</item>
     </style>
 
     <style name="PlayerMediaButton">
-        <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">@dimen/player_media_button_dimen</item>
+        <item name="android:layout_height">@dimen/player_media_button_dimen</item>
         <item name="android:tint">@color/player_media_button_background</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
     </style>
 
     <style name="PlayerOptionButton">
-        <item name="android:layout_width">24dp</item>
-        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_height">@dimen/player_option_button_dimen</item>
         <item name="android:tint">@color/player_option_button_background</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
-    </style>
-
-    <style name="RippleBorderless">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
     </style>
 
 </resources>

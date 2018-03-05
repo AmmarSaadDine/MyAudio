@@ -27,13 +27,13 @@ public class SongAdaptor extends ArrayAdapter<Song> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.songs_list_item, parent, false);
         }
 
         // Get the {@link Song} object located at this position in the list
-        Song currentSong= getItem(position);
+        Song currentSong = getItem(position);
 
         // set singer profile image
         ImageView singerImage = listItemView.findViewById(R.id.singer_image);

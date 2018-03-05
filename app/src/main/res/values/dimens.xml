@@ -9,6 +9,7 @@
 
     <!-- Library activity -->
     <dimen name="library_button_dimen">144dp</dimen>
+    <dimen name="library_button_elevation">8dp</dimen>
     <dimen name="library_button_corner">72dp</dimen>
     <dimen name="library_button_center_margin">24dp</dimen>
 
@@ -19,6 +20,24 @@
 
     <!-- Singer activity -->
     <dimen name="singer_list_item_inner_padding">16dp</dimen>
+
+    <!-- Player activity -->
+    <dimen name="player_singer_image_dimen">200dp</dimen>
+    <dimen name="player_singer_image_elevation">10dp</dimen>
+    <dimen name="player_singer_image_container_padding">8dp</dimen>
+    <dimen name="player_song_name_margin_top">16dp</dimen>
+    <dimen name="player_singer_name_margin_top">8dp</dimen>
+    <dimen name="player_progress_contianer_padding">16dp</dimen>
+    <dimen name="player_progress_bar_height">4dp</dimen>
+    <dimen name="player_progress_bar_margin_top">8dp</dimen>
+    <dimen name="player_options_buttons_container_padding">16dp</dimen>
+    <dimen name="player_option_button_dimen">24dp</dimen>
+    <dimen name="player_media_buttons_container_padding">16dp</dimen>
+    <dimen name="player_media_buttons_container_margin_bottom">16dp</dimen>
+    <dimen name="player_media_button_dimen">48dp</dimen>
+    <dimen name="player_play_button_dimen">58dp</dimen>
+    <dimen name="player_play_button_margin">8dp</dimen>
+    <dimen name="player_play_button_elevation">8dp</dimen>
 
     <!-- Font sizes -->
     <dimen name="library_button_text">20sp</dimen>

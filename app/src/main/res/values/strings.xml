@@ -12,5 +12,11 @@
     <string name="ic_media">Media icon</string>
     <string name="ic_singers">Singers icon</string>
     <string name="ic_singer_image">Singer photo</string>
+    <string name="repeat_button">Repeat button</string>
+    <string name="favourite_button">Favourite button</string>
+    <string name="shuffle_button">Shuffle button</string>
+    <string name="previous_button">Previous button</string>
+    <string name="play_button">Play button</string>
+    <string name="next_button">Next button</string>
 
 </resources>

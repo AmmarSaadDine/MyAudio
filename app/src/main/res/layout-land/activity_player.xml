@@ -13,6 +13,7 @@
 
         <!-- Image contianer (needed to add effects to the image view) -->
         <RelativeLayout
+            android:visibility="gone"
             android:id="@+id/singer_image_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -140,10 +141,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/player_media_buttons_container_margin_bottom"
+            android:baselineAligned="false"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="@dimen/player_media_buttons_container_padding"
-            android:baselineAligned="false">
+            android:padding="@dimen/player_media_buttons_container_padding">
 
             <!-- Previous button container -->
             <RelativeLayout

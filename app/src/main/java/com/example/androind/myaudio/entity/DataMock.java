@@ -49,7 +49,7 @@ public class DataMock {
     /// Returns the songs of a specific singer
     public ArrayList<Song> getSongs(Singer singer) {
         ArrayList<Song> filteredSongs = new ArrayList<>();
-        for (Song song: getSongs()) {
+        for (Song song : getSongs()) {
             if (song.singer.equals(singer)) {
                 filteredSongs.add(song);
             }
